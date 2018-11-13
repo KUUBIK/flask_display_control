@@ -1,0 +1,119 @@
+<!--<!DOCTYPE HTML>-->
+<!--<html>-->
+<!--<head>-->
+    <!--<title>GAS</title>-->
+    <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>-->
+    <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>-->
+<!--<script type="text/javascript" charset="utf-8">-->
+        <!--$(document).ready(function() {-->
+            <!--namespace = '/test';-->
+            <!--var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);-->
+            <!--socket.on('my_response', function(msg) {-->
+            <!--$(function() {-->
+                <!--$('#upload-file-btn').click(function() {-->
+                    <!--var form_data = new FormData($('#upload-file')[0]);-->
+                    <!--$.ajax({-->
+                        <!--type: 'POST',-->
+                        <!--url: '/app',-->
+                        <!--data: form_data,-->
+                        <!--contentType: false,-->
+                        <!--cache: false,-->
+                        <!--processData: false,-->
+                        <!--async: false,-->
+                        <!--success: function(data) {-->
+                            <!--console.log('Success!');-->
+                        <!--},-->
+                    <!--});-->
+                <!--});-->
+            <!--});-->
+
+<!--</script>-->
+<!--</head>-->
+<!--<body>-->
+    <!--<h2>Receive:</h2>-->
+   <!--<p><input  id = "b1" type="button" value=" Нажми меня нежно "></p>-->
+    <!--<p><input id = "b2" type="button" value=" Нажми меня средне "></p>-->
+    <!--<p><input id = "b3" type="button" value=" Нажми меня жестко "></p>-->
+    <!--<div id="message"></div>-->
+    <!--<div id="time"></div>-->
+    <!--<div id="pic"></div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>GAS</title>
+
+    <div id="response"> </div>
+    <buttom id="b2" value=" Нажми меня жестко "></buttom>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        function ap() {
+            $.ajax({
+                type: "POST",
+                url: "/ap",
+                data: $('form').serialize(),
+                type: 'POST',
+                success: function(response) {
+                    var json = jQuery.parseJSON(response)
+                    $('#len').html(json.len)
+                    console.log(response);
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        }
+
+
+
+</script>
+
+
+
+    <form action="/get_len" method="post" name="form">
+        <input id="name" name="name" type="text">
+        <input type="button" value="Отправить" onclick="ap();">
+    </form>
+    <div id="len"></div>
+
+        <form action="/get_lep" method="post" name="form">
+        <input id="name1" name="name1" type="text">
+        <input type="button" value="Отправить" onclick="as();">
+    </form>
+
+</head>
+<body>
+<!--<p><input  id = "b1" type="button" value=" Нажми меня нежно " onclick="app();"></p>-->
+    <!--<p><input id = "b2" type="button" value=" Нажми меня средне " onclick="app();"></p>-->
+    <!--<p><input id = "b3" type="button" value=" Нажми меня жестко " onclick="app();"></p>-->
+    <!--<h2>Receive:</h2>-->
+    <!--<div id="message"></div>-->
+    <!--<div id="time"></div>-->
+ <!--<div id="pic"></div>-->
+</body>
+</html>
+
+
+
+
+
+
+        <!--$(document).ready(function()-->
+          <!--{-->
+            <!--namespace = '/test';-->
+            <!--var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);-->
+            <!--socket.on('my_response', function app() {-->
+            <!--$.ajax({-->
+                <!--url: 'localhost:5000',-->
+                <!--method: 'POST',-->
+                <!--data: {"car": "/static/car1.png"}-->
+            <!--});-->
+
+            <!--});-->
+        <!--});-->

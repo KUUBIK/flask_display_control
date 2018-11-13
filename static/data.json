@@ -1,0 +1,9 @@
+{
+  "_id": 3,
+  "img": "static/img/bg.jpg",
+  "img-src": "static/img/bg.jpg",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, at!",
+  "title": "Новые клиенты за сегодня",
+  "token": 3,
+  "video": "static/video/vid.mp4"
+}

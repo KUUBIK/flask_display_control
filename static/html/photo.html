@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        alert(jQuery.fn.jquery);
+        });
+        </script>
+        {% if title %}
+        <title>{{ title }} - Microblog</title>
+        {% else %}
+        <title>Welcome to Microblog</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>Hi, {{ user }}!</h1>
+        {% for post in posts %}
+        <a href= {{user.car1}} ><img src= {{user.car1}} width="228.95 px" /></a>
+        {% endfor %}
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<html>-->
+    <!--<head>-->
+        <!--{% if title %}-->
+        <!--<title>{{ title }} - Microblog</title>-->
+        <!--{% else %}-->
+        <!--<title>Welcome to Microblog!</title>-->
+        <!--{% endif %}-->
+    <!--</head>-->
+    <!--<body>-->
+        <!--<h1>Hello, {{ user }}!</h1>-->
+    <!--</body>-->
+<!--</html>-->

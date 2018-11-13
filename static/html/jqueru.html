@@ -1,0 +1,65 @@
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>AJAX вместе с Flask</title>-->
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+    <!--<form action="/get_len" method="post" name="form">-->
+        <!--<label for="name">Введите текст:</label>-->
+        <!--<img src="Photos/car2.png" align=”top">-->
+        <!--<input id="name" name="name" type="text">-->
+        <!--<input type="button" value="Отправить" onclick="get_len();">-->
+    <!--</form>-->
+    <!--<div id="len"></div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+<script text type="text/javascript">
+
+alert("alarm!");
+
+</script>
+    <img src="{{ user_image }}" alt="User Image">
+</body>
+</html>
+
+
+
+
+
+
+
+
+    <!--<script type="text/javascript">-->
+
+        <!--function get_len() {-->
+            <!--$.ajax({-->
+                <!--type: "POST",-->
+                <!--url: "/get_len",-->
+                <!--data: $('form').serialize(),-->
+                <!--type: 'POST',-->
+                <!--success: function(response) {-->
+                    <!--var json = jQuery.parseJSON(response)-->
+                    <!--$('#len').html(json.len)-->
+                    <!--console.log(response);-->
+                <!--},-->
+                <!--error: function(error) {-->
+                    <!--console.log(error);-->
+                <!--}-->
+            <!--});-->
+        <!--}-->
+    <!--</script>-->

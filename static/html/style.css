@@ -1,0 +1,138 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #036779;
+    width: 100%;
+    height: 15vh;
+    color: #fff;
+    padding: 20px 30px;
+}
+.head-left-item {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	align-items: center;
+}
+.head-left-item img {
+	height: 100px;
+
+}
+.head-left-item h3 {
+	font-size: 20px;
+	padding: 5px;
+	margin: 0;
+}
+.head-left-item p {
+	font-size: 14px;
+	padding: 5px;
+	margin: 0;
+}
+.head-right-item {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	align-items: center;
+}
+.arrows {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+.arrows img {
+	padding: 15px;
+	background-color: #005b6a;
+}
+.menu-buttons {
+	display: flex;
+	justify-content: center;
+	width: 60%;
+}
+.menu-buttons button{
+	border: none;
+	background-color: #005b6a;
+	color: #fff;
+	padding: 20px 15px;
+}
+.menu-buttons .active {
+	color: #005b6a;
+	background-color: #fce300;
+}
+/* BODY */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #00768a;
+	color: #fff;
+	padding: 50px;
+	padding-bottom: 10px;
+
+}
+.top-column {
+	display: flex;
+	justify-content: center;
+}
+.info-block img {
+	height: 200px;
+	width: 100%;
+	position: relative;
+}
+.bottom-column {
+	display: flex;
+}
+.info-block:hover {
+	background-color: #fce300;
+	color: #005b6a;
+	
+}
+
+/**/
+.wrapper-content {
+	width: 100%;
+	height: 100vh;
+	background-color: #02788c;
+	display: flex;
+	justify-content: space-between;
+}
+.layout-left {
+	width: 50%;
+}
+.layout-left img{
+	width: 100%;
+	height: 100%;
+} 
+.layout-right {
+	width: 50%;
+	background-color: #027285;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	align-items: flex-start;
+}
+.layout-right h1 {
+	color: #fff;
+
+}
+.layout-right span {
+	width: 300px;
+	background-color: #fce300;
+	height: 5px;
+	border: none;
+
+}
+.layout-right p {
+	color: #fff;
+
+}
+.wrapper-content img {
+	width: 100%;
+}
